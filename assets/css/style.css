@@ -1,0 +1,32 @@
+html{
+
+	background: url("../hiphop1.jpg");
+}
+
+
+body{
+	width: 110%;
+	background: white;
+}
+.text-center{
+	font-size: 60px;
+	color: red;
+}
+.container{
+	font-size: 65px;
+	text-align: center;
+	color: white;
+
+}
+button{
+	background-color: black;
+	border: 2px solid green;
+}
+#countdown{
+	color: black;
+}
+.firstquestion, .secondquestion, 
+.thirdquestion, .fourthquestion
+{
+	text-align: center;
+}

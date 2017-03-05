@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trivia</title>	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	
+	<h1 class="text-center">90's Hip Hop Trivia Game</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div id="start" class="col-sm-12">
+			<button>Click to Start</button>
+			</div>
+			<br>
+			<div id="countdown"></div>
+			<div id="question"></div>
+			<div id="choices"></div>
+		</div>
+	</div>
+	<div class="firstquestion">
+	<h1>Where was 2pac killed?</h1>
+	<div class="response1" data-name="OAK">
+  <label>
+    <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+    Las Vegas, CA
+  </label>
+</div>
+<div class="response1" data-name="SF">
+  <label>
+    <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+    San Franscico,CA
+  </label>
+</div>
+<div class="response1" data-name="SJ">
+  <label>
+    <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3">
+    San Jose,CA
+  </label>
+</div>
+<div class="response1"  data-name="LA">
+  <label>
+    <input type="radio" name="optionsRadios1" id="optionsRadios4" value="option4">
+    Los Angeles,CA
+  </label>
+</div>
+</div>
+	<div class="secondquestion">
+	<h1>Who from Bad Boys Records made that song Juicy?</h1>
+	<div class="response2" data-name="pizza">
+  <label>
+    <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1">
+    French Montana
+  </label>
+</div>
+<div class="response2" data-name="tacos">
+  <label>
+    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+    Puff Daddy
+  </label>
+</div>
+<div class="response2" data-name="Thai">
+<label>
+    <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3">
+    The Notorious B.I.G
+  </label>
+</div>
+<div class="response2" data-name="burger">
+  <label>
+    <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4">
+    Mase
+  </label>
+</div>
+</div>
+<div class="thirdquestion">
+	<h1>Which member of the N.W.A crew past away?</h1>
+	<div class="response3" data-name="Athletics">
+  <label>
+    <input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1">
+    Eazy-E
+  </label>
+</div>
+<div class="response3" data-name="giants">
+  <label>
+    <input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2">
+    Ice Cube
+  </label>
+</div>
+<div class="response3" data-name="Dodgers">
+  <label>
+    <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">
+    Dr.Dre
+  </label>
+</div>
+<div class="response3" data-name="yankees">
+  <label>
+    <input type="radio" name="optionsRadios3" id="optionsRadios4" value="option4">
+    MC Ren
+  </label>
+</div>
+</div>
+<div class="fourthquestion">
+	<h1>Which Artist from Brooklyn,NY is the owner to ROC Nation Records.?</h1>
+<div  class="response4" data-name="Honda">
+  <label>
+    <input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1">
+    Jay-Z
+  </label>
+</div>
+<div class="response4" data-name="corvette">
+  <label>
+    <input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2">
+    Jim Jones
+  </label>
+</div>
+<div class="response4" data-name="jeep">
+  <label>
+    <input type="radio" name="optionsRadios4" id="optionsRadios3" value="option3">
+    50 Cent
+  </label>
+</div>
+<div class="response4" data-name="ford">
+  <label>
+    <input type="radio" name="optionsRadios4" id="optionsRadios4" value="option4">
+    NaS
+  </label>
+</div>
+</div>
+	<div class="Correct"></div>
+	<div class="Wrong"></div>
+	<div class="Unanswered"></div>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
+<script type="text/javascript" src="./assets/javascript/simple.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
