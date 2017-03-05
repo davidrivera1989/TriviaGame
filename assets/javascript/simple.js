@@ -1,25 +1,20 @@
-// When the page loads up these questions hide.
-$("label").hide(1000);
+// When the page loads up these questions and answers hide.
+$("label").hide(100);
 $(".firstquestion").hide(100);
 $(".secondquestion").hide(100);
 $(".thirdquestion").hide(100);
 $(".fourthquestion").hide(100);
+$(".logo").hide(100);
 
+
+// 
 var correct = 0;
 var inCorrect = 0;
 var unanswered = 4;
-var answers = {
-	firstquestion: $(".Oakland"),
-	checkAnswer: function(input) {
-		if ( input === answers.firstquestion ) { 
-			return true; 
-		} else { 
-			return false;}
-},
-}
+
 // When clicking the button to Start these questions and answers come ALIVE.
 $("button").on("click", function(){
-	countdown(15)
+	countdown(20)
 	$("button").remove();
 	$("label").show(1000);
 	$(".firstquestion").show(1000);
@@ -30,9 +25,8 @@ $("button").on("click", function(){
 });
 
 
-// This function gets the time ticking'
+// This function gets the time ticking and shows you the results
 var intervalId;
-
 function countdown(seconds) {
 	var time = seconds;
 	var count = function() {
@@ -40,17 +34,17 @@ function countdown(seconds) {
 		$("#countdown").html("Time Remaining: " +  time);
 		time--;
 		if ( time < 0) {
-		//alert("times up!");
 		$("#countdown").hide("Time Remaining: " +  time);
+		$(".logo").show(1000).text("Your Results!");
 		$(".Correct").show(1000).text("Correct Answers:" + correct);
 		$(".Wrong").show(1000).text("Incorrect Answers:" + inCorrect);
 		$(".Unanswered").show(1000).text("Unanswered:" + unanswered);
 		$("label").hide(1000);
-$(".firstquestion").hide(100);
-$(".secondquestion").hide(100);
-$(".thirdquestion").hide(100);
-$(".fourthquestion").hide(100);
-clearInterval(intervalId);
+		$(".firstquestion").hide(100);
+		$(".secondquestion").hide(100);
+		$(".thirdquestion").hide(100);
+		$(".fourthquestion").hide(100);
+		clearInterval(intervalId);
 		}
 	}
 	intervalId = setInterval(count, 1000);
@@ -65,12 +59,11 @@ $('.response1').on("click", function() {
 		correct++;
 		unanswered--;
 		$(".firstquestion").hide(1000);
-
 		console.log("You got it!" + correct);
 	}
 	else if (userAnswer !== "OAK") {
 		inCorrect++;
-		unanswered--
+		unanswered--;
 		$(".firstquestion").hide(1000);
 		console.log("wrong answer!")
 
@@ -87,7 +80,7 @@ $('.response2').on("click", function() {
 	}
 	else if (userAnswer !== "Thai") {
 		inCorrect++;
-		unanswered--
+		unanswered--;
 		$(".secondquestion").hide(1000);
 		console.log("wrong answer!")
 

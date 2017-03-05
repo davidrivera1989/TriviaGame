@@ -5,28 +5,45 @@ html{
 
 
 body{
-	width: 110%;
+	width: 80%;
 	background: white;
+	display: inline;
 }
 .text-center{
+	margin-left: 300px;
+	margin-right: 300px;
 	font-size: 60px;
-	color: red;
+	color: #ed0909;
+	background-color: #29a9ab;
+	border: 3px dotted #ed0909;
 }
 .container{
-	font-size: 65px;
+	font-size: 60px;
 	text-align: center;
 	color: white;
 
 }
 button{
 	background-color: black;
-	border: 2px solid green;
+	border: 10px solid #09ed0d;
+	border-style: double;
 }
 #countdown{
-	color: black;
+	color: #48d624;
+	background: #e6209a;
+
 }
 .firstquestion, .secondquestion, 
 .thirdquestion, .fourthquestion
 {
 	text-align: center;
+	color: white;
+	border: 5px solid green;
+	background: black;
+}
+.Box{
+	font-size: 40px;
+	color: #09ed0d;
+	text-align: center;
+	background: black;
 }
