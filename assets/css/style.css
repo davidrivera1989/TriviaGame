@@ -10,10 +10,8 @@ body{
 	display: inline;
 }
 .text-center{
-	margin-left: 300px;
-	margin-right: 300px;
-	font-size: 60px;
-	color: #ed0909;
+	font-size: 40px;
+	color: white;
 	background-color: #29a9ab;
 	border: 3px dotted #ed0909;
 }
@@ -24,9 +22,11 @@ body{
 
 }
 button{
+	text-align: center;
 	background-color: black;
 	border: 10px solid #09ed0d;
 	border-style: double;
+	position: static;
 }
 #countdown{
 	color: #48d624;
@@ -40,6 +40,8 @@ button{
 	color: white;
 	border: 5px solid green;
 	background: black;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 .Box{
 	font-size: 40px;
